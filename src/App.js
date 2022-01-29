@@ -28,7 +28,7 @@ function App() {
 
     email: yup.string()
       .email('Invalid email')
-      .required('Input field can not be empty')
+      .required('Email field can not be empty')
 
   })
 
@@ -63,7 +63,7 @@ function App() {
               /><br />
               <label htmlFor="email">Email: </label><br />
               <input
-                className='input'
+                className='email'
                 type="email"
                 name="email"
                 onChange={handleChange}
@@ -72,7 +72,7 @@ function App() {
               /><br />
               <label htmlFor="password">Password: </label><br />
               <input
-                className='input'
+                className='password'
                 type="password"
                 name="password"
                 onChange={handleChange}
@@ -81,7 +81,7 @@ function App() {
               /><br />
               <label htmlFor="confirmPassword">Confirm password: </label><br />
               <input
-                className='input'
+                className='confirmPassword'
                 type="password"
                 name="confirmPassword"
                 onChange={handleChange}
